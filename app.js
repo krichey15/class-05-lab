@@ -45,7 +45,15 @@ Fourth element: "The product of 4 and 7 and 5 is 140."
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-
+function sumAndMultiply(number1, number2, number3){
+  var sum = number1 + number2 + number3;
+  var product = number1 * number2 * number3;
+  var sumString = number1 + ' and ' + number2 + ' and ' + number3 + ' sum to ' + sum + '.';
+  var productString = 'The product of ' + number1 + ' and ' + number2 + ' and ' + number3 + ' is ' + product + '.';
+  var theArray = [sum, product, sumString, productString];
+  console.log(theArray);
+  return theArray;
+}
 // Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
 
