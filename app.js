@@ -6,8 +6,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 
+function sum(number1, number2){
+  var theSum = number1 + number2;
+  var answerString = 'The sum of ' + number1 + ' and ' + number2 + ' is ' + theSum + '.';
+  var answer = [theSum, answerString];
+  console.log(answer);
+  return answer
+}
 // Here is the test for sum(); uncomment it to run it
-//testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle.
 
